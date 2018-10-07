@@ -1,4 +1,4 @@
-Programa de Filtros
+# Programa de Filtros
 
 Este programa te permite calcular los parámetros de 4
 tipos diferentes de filtros con amplificadores operacionales.
