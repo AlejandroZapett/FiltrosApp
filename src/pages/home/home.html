@@ -1,0 +1,43 @@
+<ion-content>
+  <!--Back button-->
+  <button class="button-back" (click)="dismiss($e)">
+    <ion-icon style="zoom:2.0;"  color="light" name="arrow-back"></ion-icon>
+  </button>
+  <!--Opciones de filtro-->
+  <div class="content-column" *ngIf="tipoFiltro == '' ">
+    <div class="title" align="center">
+      
+    </div>
+    <h2 align="center">¿Qué tipo de filtro necesitas?</h2>
+    <button class="bfiltro" (click)="buttonFiltro('pasaAltas20')">
+      <p>pasa altas</p>
+      <p class="gray">20 dB/dec</p>
+    </button>
+    <button class="bfiltro" (click)="buttonFiltro('pasaBajas20')">
+      <p>pasa bajas</p>
+      <p class="gray">20 dB/dec</p>
+    </button>
+    <button class="bfiltro" (click)="buttonFiltro('pasaAltas40')">
+      <p>pasa altas</p>
+      <p class="gray">40 dB/dec</p>
+    </button>
+    <button class="bfiltro" (click)="buttonFiltro('pasaBajas40')">
+      <p>pasa Bajas</p>
+      <p class="gray">40 dB/dec</p>
+    </button>
+  </div>
+
+  <!--Ingreso de parámetros-->
+  <div class="content-column"  *ngIf="tipoFiltro != '' ">
+    <!--header-->
+    <div class="title" align="center">
+    </div>
+    <div class="card-dos">
+      <h2 align="center">{{Filtros[tipoFiltro]}}</h2>
+      <p align="center">Ingresa un valor para la frecuencia de corte:</p>
+      <ion-input type="number" placeholder="Frecuencia [Hz]" [(ngModel)]="frecuencia" align="center"></ion-input>
+      <button class="calcular" (click)="calcular()" *ngIf="frecuencia != ''" >Calcular</button>
+    </div>
+    
+  </div>
+</ion-content>

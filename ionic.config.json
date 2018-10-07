@@ -1,0 +1,7 @@
+{
+  "name": "FiltrosFrontend",
+  "integrations": {
+    "cordova": {}
+  },
+  "type": "ionic-angular"
+}

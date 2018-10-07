@@ -1,0 +1,47 @@
+page-landing {
+    .content {
+        background-image: linear-gradient(to right,  #00ace6 , #1ac6ff);
+    }
+    h2{
+        font-family: 'BebasKai';
+        font-size: 50px;
+        margin-bottom: 30px;
+        color: white;
+    }
+    p {
+        font-family: 'Roboto-Light';
+        font-size: 20px;
+        color: white;
+    }
+    .letreros {
+        position: absolute;
+        top: 35%;
+        margin: 10%;
+        width: 80%;
+    }
+    button {
+        color: white;
+        position: absolute;
+        bottom: 10px;
+        margin: 10%;
+        width: 80%;
+        padding: 20px;
+        background-image: linear-gradient(to right,  #00ace6 , #1ac6ff);
+        border: solid 1px white;
+        border-radius: 30px;
+        font-family: 'Roboto-Light';
+        font-size: 20px;
+    }
+    .ripple {
+        background-position: center;
+        transition: background 0.8s;
+    }
+    .ripple:hover {
+        background: #00ace6 radial-gradient(circle, transparent 1%, #00ace6 1%) center/15000%;
+    }
+    .ripple:active {
+        background-color: #80dfff;
+        background-size: 100%;
+        transition: background 0s;
+    }
+}
