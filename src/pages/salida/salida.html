@@ -5,12 +5,12 @@
   <div class="card">
     <h3 align="center">Parámetros</h3>
     <ion-item><p>Tipo de filtro: {{tipoFiltro}}</p></ion-item>
-    <ion-item><p>Frecuencia de corte: {{frecuencia}}</p></ion-item>
-    <ion-item><p>Capacitor: {{capacitor}}</p></ion-item>
-    <ion-item *ngIf="c2 != 0"><p>Capacitor 2: {{c2}}</p></ion-item>
-    <ion-item><p>Resistencia: {{resistencias[0]}}</p></ion-item>
-    <ion-item *ngIf="r2 != 0"><p>Resistencia 2: {{r2}}</p></ion-item>
-    <ion-item><p>Resistencia de Feedback: {{rF}}</p></ion-item>
+    <ion-item><p>Frecuencia de corte: {{frecuencia}} rad/s</p></ion-item>
+    <ion-item><p>Capacitor: {{capacitor}} uF</p></ion-item>
+    <ion-item *ngIf="c2 != 0"><p>Capacitor 2: {{c2}} uF</p></ion-item>
+    <ion-item><p>Resistencia: {{resistencias[0]}} ohms</p></ion-item>
+    <ion-item *ngIf="r2 != 0"><p>Resistencia 2: {{r2}} ohms</p></ion-item>
+    <ion-item><p>Resistencia de Feedback: {{rF}} ohms</p></ion-item>
     <ion-item no-lines><p>Porcentaje de error: {{error}}</p></ion-item>
     
   </div>
